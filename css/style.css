@@ -348,26 +348,23 @@ footer {
     display: grid;
     grid-template-columns: 65% 35%;
     padding : 2rem 2rem 2rem 2rem;
+    margin: -0.5rem -0.5rem -0.5rem -0.5rem;
+    background-image: url(https://media.gettyimages.com/photos/buying-new-house-picture-id1072147790?k=6&m=1072147790&s=612x612&w=0&h=w_uPo7ydnynFb0cP0L7eXRR6422LTUE3iYyvTDohW78=);
+    background-repeat: no-repeat;
+    background-size :cover;
   }
   
   .vendre-description {
       margin-bottom: 4rem ;    
   }
 
-  .vente-descritpion-section {
-      background-image: url(https://www.facilogi.com/blog/wp-content/uploads/2016/10/Ouvrir-agence-1.jpg);
-      padding: 6rem 3rem 5rem 3rem;
-  }
-
   .vente {
       color: white;
       background-color: rgb(34, 24, 24);
-      opacity: 0.6;
-      padding: 4rem 2rem 2rem 2rem;
+      opacity: 0.8;
+      padding: 5rem 2rem 2rem 2rem;
+      margin-top: 1.5rem;
   }
-
-
-
 
   .vendre-description h1,  .vendre-description h3 {
     margin-bottom: 2rem ;
@@ -389,7 +386,6 @@ footer {
   .vente-title {
       text-align: center;
       margin-bottom: 2.5rem;
-      margin-left: 1.5rem;
   }
 
   .Vente-form {
@@ -414,11 +410,10 @@ footer {
   }
 
    /*      Contact page     */
-
    .contact-description {
       margin: 2rem 5rem 2rem 6rem;
       padding: 1rem 1rem 1rem 1rem;
-      box-shadow: 0 3px 10px black;
+      box-shadow: 0 3px 10px black;     
    }
 
    .contact-description h1 {
@@ -448,7 +443,7 @@ footer {
    .contact-page-info {
     display: grid;
     grid-template-columns: auto auto;
-    justify-content: space-around;
+    justify-content: space-around
   }
 
   .contact-page-section div i {
@@ -489,7 +484,7 @@ footer {
       border-radius: 1.5rem;
       padding: 0.4rem 0.4rem 0.8rem 0.4rem;
       box-shadow: 0 3px 10px white;
-      margin-top: -4px;
+      margin-top: -4px;   
   }
 
 
