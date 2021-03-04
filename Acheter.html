@@ -5,10 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Acheter</title>
+    <!------------ Stylesheets ------------->
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <link rel="icon"  href="./img/icons8-house-64.png">
 </head>
-<body>
+  <body>
+    <!---------------- Header ---------------->
     <div class="header">
         <div>
             <img class="fr-img" src="./img/fr.png" alt="">
@@ -23,10 +26,13 @@
             <a href="Contact.html" target="_blank"><i class="fas fa-envelope"></i></a>
         </div>
     </div>
+    <!----------------- Logo and nav bar ---------------->
     <section class="section-top">
+        <!----------------------- Logo ---------------------->
         <div class ="cover">
             <img class ="cover-img" src="./img/Cover.png" alt="">
         </div>
+         <!-------------------- Nav bar  ------------------->
         <div class="nav-bar">
            <dl><a class="menu" href="Acceuil.html">Acceuil</a></dl>
            <dl><a href="Acheter.html">Acheter</a></dl> 
@@ -35,13 +41,14 @@
            <dl><a href="Contact.html">Contact</a></dl>
         </div>
     </section>
-
+    <!---------------- Cover image   -------------------->
     <img class ="Cover-img" src="./img/cover-img.jpg" alt="">
-
+    <!------------------- Top search--------------------->
     <div class="Selection">
+         <!------------------- Select type -------------------->
         <div>
             <select class="Select" name="type" id="type">
-                <option value="Select">Type</option>
+                <option value="Select" selected disabled="disabled">Type</option>
                 <option value="Appartement">Appartement</option>
                 <option value="Maison">Maison</option>
                 <option value="Terrain">Terrain</option>
@@ -52,21 +59,22 @@
                 <option value="Cave">Cave</option>
             </select>            
         </div>
+        <!------------------- Select city -------------------->
         <div>
             <select class="Select" name="ville" id="ville">
-                <option value="Select">Ville</option>
+                <option value="Select" selected disabled="disabled">Ville</option>
                 <option value="Tunis">Tunis</option>
                 <option value="Sousse">Sousse</option>
                 <option value="Sfax">Sfax</option>
                 <option value="Nabeul">Nabeul</option>
                 <option value="Ben Arous">Ben Arous</option>
                 <option value="Ariana">Ariana</option>
-            </select> 
-            
+            </select>    
         </div>
+        <!------------------- Select price -------------------->
         <div>
             <select class="Select" name="prix" id="prix">
-                <option value="Select">Prix</option>
+                <option value="Select" selected disabled="disabled">Prix</option>
                 <option value="0 - 1000 DT">0 - 1000 DT</option>
                 <option value="1000 - 200.000 DT">1000 - 200.000 DT</option>
                 <option value="200.000 - 400.000 DT">200.000 - 400.000 DT</option>
@@ -74,18 +82,21 @@
                 <option value="+ 800.000 DT">+ 800.000 DT</option>
             </select>            
         </div>
+         <!------------------- Search button -------------------->
         <div>
             <a href="#"><img class="search-house" src="./img/search.png" alt=""></a>
         </div>  
    </div>
-
+   <!------------------- Buying section -------------------->
    <div class="achat-section">
+        <!------------------- Buying description -------------------->
        <div>
            <h3>Vente de maisons et appartements</h3>
            <p>Nos agents immobiliers Yosra implantés dans les plus beaux quartiers de Tunis proposent des annonces de maisons, appartements et terrains à la vente autour de Tunis dans les quartiers des Berges du Lac et des Jardins de Carthage mais aussi dans les villas de La Marsa, Carthage et Sidi Bou Saïd.</p>
            <div class="tri-section">
+            <!------------------- Order by -------------------->
             <select class="tri" name="tri" id="tri">
-                <option value="Select">Trier par</option>
+                <option value="Select" selected disabled="disabled">Trier par</option>
                 <option value="Prix croissant">Prix croissant</option>
                 <option value="Prix décroissant">Prix décroissant</option>
                 <option value="Surface croissante">Surface croissante</option>
@@ -93,6 +104,7 @@
                 <option value="Nouveautés">Nouveautés</option>
             </select> 
           </div>
+          <!------------------- Buying card -------------------->
           <div class="à-achter">
               <div>
                   <h4>Villa à la Marina de Gammarth</h4>
@@ -163,6 +175,7 @@
                   </div>
               </div>
           </div>
+          <!------------------- Pagination -------------------->
           <div class="pagination">
                 <a href="#">&laquo;</a>
                 <a href="#" class="active">1</a>
@@ -174,11 +187,56 @@
                 <a href="#">&raquo;</a>
           </div>
        </div>
-       <div>
+         <!------------------- side-bar form -------------------->
+       <div class="achat-form">
+           <div>
+            <select class="Select" name="type" id="type">
+                <option value="Select" selected disabled="disabled">Type</option>
+                <option value="Appartement">Appartement</option>
+                <option value="Maison">Maison</option>
+                <option value="Terrain">Terrain</option>
+                <option value="Commerce">Commerce</option>
+                <option value="Garage">Garage/Parking</option>
+                <option value="Immeuble">Immeuble</option>
+                <option value="Bureau">Bureau</option>
+                <option value="Cave">Cave</option>
+            </select> 
+           </div>
+           <div>
+            <select class="Select" name="piéces" id="piéces">
+                <option value="Select" selected disabled="disabled">Piéces</option>
+                <option value="1 pièce">1 pièce</option>
+                <option value="2 pièces">2 pièces</option>
+                <option value="3 pièces">3 pièces</option>
+                <option value="4 pièces">4 pièces</option>
+                <option value="5 pièces">5 pièces</option>
+                <option value="6 pièces">6 pièces</option>
+                <option value="+6 pièces">+6 pièces</option>
+            </select> 
+           </div>
+           <div>
+            <select class="Select" name="ville" id="ville">
+                <option value="Select" selected disabled="disabled">Ville</option>
+                <option value="Tunis">Tunis</option>
+                <option value="Sousse">Sousse</option>
+                <option value="Sfax">Sfax</option>
+                <option value="Nabeul">Nabeul</option>
+                <option value="Ben Arous">Ben Arous</option>
+                <option value="Ariana">Ariana</option>
+            </select> 
+           </div>
+           <div>
+            <input type="text" id="name" name="name" required minlength="4" maxlength="8"  placeholder="Budget min">
+           </div>
+           <div achat-form-item>
+            <input type="text" id="name" name="name" required minlength="4" maxlength="8"  placeholder="Budget max">
+           </div>
+           <div class="form-button">
+            <div><a href=""><i class="fas fa-search"></i></a></div>
+           </div>
        </div>
    </div>
-  
-
+   <!---------------- Footer   -------------------->
    <footer>
        <div class="footer-section">
            <div>
@@ -227,14 +285,6 @@
            </div>
        </div>
        <div class ="copyright"> <i class="fas fa-copyright"></i> Copyright Amino <i class="fas fa-heart"></i> 2021</div>  
-   </footer>
-   
-
-   
- 
-
-
-  
-    
-</body>
+   </footer>  
+  </body>
 </html>

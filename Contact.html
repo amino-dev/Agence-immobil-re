@@ -5,10 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
+     <!------------ Stylesheets ------------->
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <link rel="icon"  href="./img/icons8-house-64.png">
 </head>
-<body>
+ <body>
+     <!---------------- Header ---------------->
     <div class="header">
         <div>
             <img class="fr-img" src="./img/fr.png" alt="">
@@ -23,10 +26,13 @@
             <a href="Contact.html" target="_blank"><i class="fas fa-envelope"></i></a>
         </div>
     </div>
+     <!----------------- Logo and nav bar ---------------->
     <section class="section-top">
+        <!----------------------- Logo ---------------------->
         <div class ="cover">
             <img class ="cover-img" src="./img/Cover.png" alt="">
         </div>
+        <!-------------------- Nav bar  ------------------->
         <div class="nav-bar">
            <dl><a class="menu" href="Acceuil.html">Acceuil</a></dl>
            <dl><a href="Acheter.html">Acheter</a></dl> 
@@ -35,12 +41,83 @@
            <dl><a href="Contact.html">Contact</a></dl>
         </div>
     </section>
-
+    <!---------------- Cover image   -------------------->
     <img class ="Cover-img" src="./img/cover-img.jpg" alt="">
 
-    
-  
-
+      <!------------- Contact description   ------------>
+    <div class="contact-description">
+        <h1>Votre décision est prise «vous achetez ! Vous vendez»</h1>
+        <p>
+          Alors n’hésitez plus, rejoignez notre agence immobilière une compétente est disponible.
+          Nous sommes une agence immobilière dont les fondements reposent sur le sérieux, la transparence et le professionnalisme au service de ses clients.
+          De la transaction immobilière (neuves et anciennes) à la gestion de syndic d’immeubles, de copropriétés et locatives, notre connaissance du marché et notre écoute nous permettent de vous offrir des avantages considérables :
+        </p>
+        <ul>
+            <li>Un réseau de vendeur et d’acheteur</li>
+            <li>Une gamme de produits adaptés à vos critères</li>
+            <li>Une personnalisation des dossiers</li>
+            <li>Des capacités de communications</li>
+            <li>L’étude de votre patrimoine avec l’objectif d’une défiscalisation</li>
+            <li>L’estimation de votre bien gratuit</li>
+            <li>L’efficacité et la sécurité d’un bien conforme aux réglementations</li>
+            <li>L’aide à la constitution de votre dossier d’offre de prêt</li>
+        </ul>
+        <p>
+          Nos agences immobilière à Tunis Berges du Lac et Jardins de Carthage «la sérénité dans l’immobilière» n’est pas de vain mot. La sérénité et la tranquillité lors d’un investissement immobilière c’est non seulement sérieux mais aussi précieux à nos yeux!
+          Pour bien vendre votre bien immobilier, confiez- le à Yosra immobilière.
+        </p>
+    </div>
+    <div class="contact-page-section">
+        <h1 class="contact-title">Contactez-nous</h1>
+        <div class="contact-page-info">
+            <div>
+                <img src="./img/icons8-house-64.png" alt="">
+                <div class="contact-page-item">
+                    <i class="fas fa-map-marker-alt"></i> Résidence La Lune de Lac
+                        <br> <span class="adresse">Local A02</span>
+                        <br> <span class="adresse">1053 Les Berges du Lac</span> 
+                </div>
+                <div class="contact-page-item">
+                    <i class="fas fa-map-marker-alt"></i> Résidence Jardins de Carthage
+                        <br> <span class="adresse">Local N°5</span>
+                        <br> <span class="adresse">2016 Jardins de Carthage </span> 
+                </div>
+                <div class="contact-page-item">
+                    <i class="fas fa-phone-alt"></i>+216 71 191 939
+                </div>
+                <div class="contact-page-item">
+                    <i class="fas fa-fax"></i>+216 71 192 009
+                </div>
+                <div class="contact-page-item">
+                    <i class="fas fa-phone-alt"></i>+216 71 266 041
+                </div> 
+            </div>
+            <div class="contact-page-form">
+                <div class="contact-page-form-item">
+                    <select class="agence" name="agence" id="agence">
+                        <option value="Select">Agence Berges du lac</option>
+                        <option value="Prix croissant">Agence Jardins de Carthage</option>
+                    </select> 
+                </div>
+                <div class="contact-page-form-item">
+                    <input type="text" id="name" name="name" required minlength="4" maxlength="14"  placeholder="Nom">
+                </div>
+                <div class="contact-page-form-item">
+                    <input type="email" id="email" name="email" required   placeholder="votre.email@gmail.com">
+                </div>
+                <div class="contact-page-form-item">
+                    <input type="tel" id="" name="number" required minlength="7" maxlength="20"  placeholder="Numéro de téléphone">
+                </div>
+                <div class="contact-page-form-item">
+                    <textarea type="text" id="text" name="text" rows="12" required></textarea>  
+                </div> 
+                <div class="envoyer-icon">
+                    <a href=""><i class="far fa-paper-plane"></i></a>
+                </div>
+            </div>      
+        </div>     
+    </div>
+   <!---------------- Footer   -------------------->
    <footer>
        <div class="footer-section">
            <div>
@@ -90,13 +167,5 @@
        </div>
        <div class ="copyright"> <i class="fas fa-copyright"></i> Copyright Amino <i class="fas fa-heart"></i> 2021</div>  
    </footer>
-   
-
-   
- 
-
-
-  
-    
-</body>
+ </body>
 </html>

@@ -1,8 +1,20 @@
+/*       communs page      */
 body {
     overflow-x: hidden; 
     overflow-y: scroll;
+    font-family :'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 
+select {
+    font-size: 1rem;
+}
+
+input {
+    font-size: 1rem;
+}
+
+
+/*       Header      */
 .header {
    display: grid;
    grid-template-columns: 6% 88% 3% 3%;
@@ -79,9 +91,52 @@ a {
     height: 2.5rem;
 }
 
+/*        Footer         */
+footer {
+    background-color: black;
+    color: white;
+    font-family : 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    padding-top: 1rem;
+    margin: -10px -8px 0 -10px;
+}
+
+.footer-section {
+    display: flex;
+    justify-content: space-around;  
+}
+
+.conatct-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-section h3 {
+    margin-bottom: 4rem;
+}
+
+.contact-section div i {
+    margin-right: 1rem;
+}
+
+
+.contact-section div{
+    margin-bottom: 2rem;
+}
+
+.adresse{
+    margin-left: 2rem;
+}
+
+.copyright {
+    text-align: center;
+    padding: 2rem 0 2rem 0;
+}
+
+/*       Home page      */
 .Dernières-offres-titre {
     text-align: center;
-    color: blue;
+    margin: 2rem 0 4rem 0;
 }
 
 .Dernières-offres-section div img {
@@ -139,158 +194,114 @@ a {
     opacity: 0.5;
   }
 
-.info-1-section {
+  .info-1-section {
+    color: whitesmoke;
     display: grid;
     grid-template-columns: auto auto;
     justify-content: space-around;
     grid-column-gap: 6rem;
     padding: 0 4rem 0 4rem;
-    background-color :  rgba(0, 0, 0, 0.5);
-    margin: 0 4rem 0 4rem;
-}
+    background-color : rgb(34, 24, 24);
+    margin: -2rem 4rem 4rem 4rem;
+  }
 
-.info-img {
+  .info-img {
     width: 35rem;
     padding:  2.5rem 0 2rem 0;
-}
+ }
 
-.info-description {
+ .info-description {
     padding:  1.6rem 0 1.6rem 0;
     line-height: 1.6rem;
-}
+ }
 
-.info-title {
+ .info-title {
     text-align: center;
     text-decoration: underline;
-}
+ }
 
-.info-button {
+ .info-button {
     padding : 10px 10px 10px 10px;
     color: whitesmoke;
     border-radius: 0px;
     background-color: black;  
-}
+ }
 
-.button {
+ .button {
     display: flex;
     justify-content: center;
-}
+ }
 
-.info-2-section {
+ .info-2-section {
     padding: 2rem 6rem 2rem 6rem;
     opacity: 1.5;
-}
+ }
 
-.info-section {
+ .info-section {
     padding: 2rem 0rem 0 0rem;  
-}
-
-hr {
-    color: blue;
-}
-
-footer {
-    background-color: black;
-    color: white;
-    font-family : 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 15px;
-    padding-top: 1rem;
-    margin: -10px -8px 0 -10px;
-    
-}
-.footer-section {
-    display: flex;
-    justify-content: space-around;
-    
-}
-
-.conatct-section {
-    display: flex;
-    flex-direction: column;
-}
-
-.footer-section h3 {
-    margin-bottom: 4rem;
-}
-
-.contact-section div i {
-    margin-right: 1rem;
-}
+ }
 
 
-.contact-section div{
-    margin-bottom: 2rem;
-}
-
-.adresse{
-    margin-left: 2rem;
-}
-
-.copyright {
-    text-align: center;
-    padding: 2rem 0 2rem 0;
-}
-
-.achat-section {
+/*      Buying and renting pages     */
+ .achat-section {
     display: grid;
     grid-template-columns: 65% 35%;
     padding : 2rem 2rem 2rem 2rem;
-}
+ }
 
-.tri {
+ .tri {
  border: none;
  background-color: transparent;
- width: 6rem;
-}
+ width: 11rem;
+ }
 
-.tri-section {
+ .tri-section {
     display: flex;
     justify-content: right;
-}
+ }
 
-.à-achter {
-    margin: 3rem 0 5rem 0;
+ .à-achter {
+    margin: 3rem 0 0.5rem 0;
     display: grid;
-    justify-content: space-evenly;
+    justify-content: space-around;
     grid-template-columns: auto auto;
     grid-row-gap: 3rem;
-}
+ }
 
-.à-achter img {
+ .à-achter img {
     width: 20rem;
     height: 15rem;
     padding:  2.5rem 0 2rem 0;
-}
+ }
 
-.à-achter h4 {
+ .à-achter h4 {
     text-align: center;
     margin-bottom: -1.5rem;
-}
+ }
 
-.à-achter .prix{
+ .à-achter .prix{
     margin-top: -2.3rem;
     padding: 1rem 1rem 1rem 0.5rem;
     background-color: rgba(0, 0, 0, 0.5);
     width: 8.5rem;
-}
+ }
 
-.prix-info {
+ .prix-info {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
    
-}
+ }
 
-.surface {
+ .surface {
     position: relative;
     top : -2.5rem;
     left: 1rem;
-}
+ }
 
-.pagination {
+  .pagination {
     display: inline-block;
     margin-left: 13rem;
-    margin-top: -10rem;
   }
   
   .pagination a {
@@ -304,3 +315,181 @@ footer {
     background-color: black;
     color: white;
   }
+
+  .achat-form {
+      margin: 1rem 0 0 5.5rem;
+      margin-top: 1rem;
+      background-color: rgb(34, 24, 24);
+      height: 23rem;
+      padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  }
+
+  .achat-form select {
+      width: 19rem;
+      height: 3rem;
+      margin: 0.5rem;
+  }
+
+  .achat-form input {
+    width: 18rem;
+    height: 3rem;
+    margin: 0.5rem;
+  }
+   
+  .form-button {
+     display: flex;
+     justify-content: center;
+     transform: scale(1.4);
+     margin-top: 1rem;
+  }
+
+  /*      Sale page     */
+  .Vente-section{
+    display: grid;
+    grid-template-columns: 65% 35%;
+    padding : 2rem 2rem 2rem 2rem;
+  }
+  
+  .vendre-description {
+      margin-bottom: 4rem ;    
+  }
+
+  .vente-descritpion-section {
+      background-image: url(https://www.facilogi.com/blog/wp-content/uploads/2016/10/Ouvrir-agence-1.jpg);
+      padding: 6rem 3rem 5rem 3rem;
+  }
+
+  .vente {
+      color: white;
+      background-color: rgb(34, 24, 24);
+      opacity: 0.6;
+      padding: 4rem 2rem 2rem 2rem;
+  }
+
+
+
+
+  .vendre-description h1,  .vendre-description h3 {
+    margin-bottom: 2rem ;
+    text-decoration: underline;
+  }
+
+  .Vente-form select {
+    width: 19rem;
+    height: 3rem;
+    margin: 0.5rem;
+  }
+
+ .Vente-form input {
+  width: 18rem;
+  height: 3rem;
+  margin: 0.5rem;
+  }
+
+  .vente-title {
+      text-align: center;
+      margin-bottom: 2.5rem;
+      margin-left: 1.5rem;
+  }
+
+  .Vente-form {
+    margin: 1rem 0 0 5.5rem;
+    margin-top: 1rem;
+    background-color: rgb(34, 24, 24);
+    height: 36rem;
+    padding: 0.5rem 0.5rem 0.7rem 0.5rem; 
+  }
+
+  .envoyer-icon {
+    display: flex;
+    justify-content: center;
+    transform: scale(1.6);
+    margin-top: 1rem;
+  }
+
+   textarea {
+    margin-left: 0.5rem;
+    margin-bottom: 0.6rem;
+    width: 18.7rem;
+  }
+
+   /*      Contact page     */
+
+   .contact-description {
+      margin: 2rem 5rem 2rem 6rem;
+      padding: 1rem 1rem 1rem 1rem;
+      box-shadow: 0 3px 10px black;
+   }
+
+   .contact-description h1 {
+       text-decoration: underline;
+       margin-bottom: 3rem;
+   }
+
+   .contact-description p , .contact-description li {
+       line-height: 2rem;     
+  }
+  
+   .contact-title {
+    text-align: center;
+    margin : 2rem 0 6rem 0;
+  }
+
+   .contact-page-section {
+    font-family: monospace;
+    font-size: 14px;
+    line-height: 25px;
+    color: white;
+    background-color:rgb(34, 24, 24);
+    margin: -10px -8px 0 -10px;
+    padding : 12px 5px 15px 5px;
+   }
+
+   .contact-page-info {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-around;
+  }
+
+  .contact-page-section div i {
+    margin-right: 1rem;
+  }
+
+  .contact-page-item, .contact-page-form {
+      margin : 3rem 0 3rem 0;
+  }
+
+  .contact-page-section select {
+    width: 25rem;
+    height: 3rem;
+    margin: 0.5rem;
+  }
+
+  .contact-page-section input {
+    width: 24rem;
+    height: 3rem;
+    margin: 0.5rem;
+  }
+
+  .contact-page-section textarea {
+    width: 25rem;
+  }
+
+  .contact-page-form input, .contact-page-form select{
+      margin-bottom: 0.1rem;
+      
+  }
+
+  .contact-page-form textarea {
+      margin-top: 0.6rem;
+  }
+
+  .contact-page-form {
+      border : 1px solid white;
+      border-radius: 1.5rem;
+      padding: 0.4rem 0.4rem 0.8rem 0.4rem;
+      box-shadow: 0 3px 10px white;
+      margin-top: -4px;
+  }
+
+

@@ -5,10 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vendre</title>
+     <!------------ Stylesheets ------------->
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <link rel="icon"  href="./img/icons8-house-64.png">
 </head>
-<body>
+ <body>
+     <!---------------- Header ---------------->
     <div class="header">
         <div>
             <img class="fr-img" src="./img/fr.png" alt="">
@@ -23,10 +26,13 @@
             <a href="Contact.html" target="_blank"><i class="fas fa-envelope"></i></a>
         </div>
     </div>
+     <!----------------- Logo and nav bar ---------------->
     <section class="section-top">
+        <!----------------------- Logo ---------------------->
         <div class ="cover">
             <img class ="cover-img" src="./img/Cover.png" alt="">
         </div>
+        <!-------------------- Nav bar  ------------------->
         <div class="nav-bar">
            <dl><a class="menu" href="Acceuil.html">Acceuil</a></dl>
            <dl><a href="Acheter.html">Acheter</a></dl> 
@@ -35,13 +41,66 @@
            <dl><a href="Contact.html">Contact</a></dl>
         </div>
     </section>
-
+    <!---------------- Cover image   -------------------->
     <img class ="Cover-img" src="./img/cover-img.jpg" alt="">
-
-   
-
-  
-
+    <!---------------- Sale section   -------------------->
+    <div class ="Vente-section">
+          <!---------------- Sale description   -------------------->
+        <div class="vente-descritpion-section">
+            <div class="vente">
+                <div class="vendre-description">
+                    <h1>Vendre votre appartement ou votre propriété à Tunis, Tunisie</h1>
+                    <p>Nos agences immobilières tunisiennes Yosra avec son équipe polyglotte vous aident à mettre en vente ou à mettre en location votre propriété à Tunis et ses alentours.</p>
+                 </div>
+                 <div class="vendre-description">
+                    <h3>Expertise Marketing</h3>
+                    <p>Notre expertise marketing permet de diffuser votre bien sur les principaux portails immobiliers, sur nos newsletters ciblés et sur nos vitrines au coeur de nos agences de Tunis (Berges du Lac et Jardins de Carthage).</p>
+                 </div>
+                 <div class="vendre-description">
+                    <h3>Expertise Administrative</h3>
+                    <p>Notre expertise sur la législation tunisienne vous assistera pour les démarches administratives. Notre équipe est polyglotte et vous aidera au mieux à réussir à vendre votre bien.</p>
+                 </div> 
+            </div>
+        </div>
+          <!---------------- Sale form  -------------------->
+        <div>
+            <h1 class="vente-title">Contactez nous</h1>
+            <div class ="Vente-form">
+                <select class="agence" name="agence" id="agence">
+                    <option value="Select">Agence Berges du lac</option>
+                    <option value="Prix croissant">Agence Jardins de Carthage</option>
+                </select> 
+                <input type="text" id="name" name="name" required minlength="4" maxlength="14"  placeholder="Nom">
+                <input type="email" id="email" name="email" required   placeholder="votre.email@gmail.com">
+                <input type="tel" id="" name="number" required minlength="7" maxlength="20"  placeholder="Numéro de téléphone">
+                <select class="" name="type" id="type">
+                    <option value="Select" selected disabled="disabled">Type</option>
+                    <option value="Appartement">Appartement</option>
+                    <option value="Maison">Maison</option>
+                    <option value="Terrain">Terrain</option>
+                    <option value="Commerce">Commerce</option>
+                    <option value="Garage">Garage/Parking</option>
+                    <option value="Immeuble">Immeuble</option>
+                    <option value="Bureau">Bureau</option>
+                    <option value="Cave">Cave</option>
+                </select> 
+                <select class="" name="ville" id="ville">
+                    <option value="Select" selected disabled="disabled">Ville</option>
+                    <option value="Tunis">Tunis</option>
+                    <option value="Sousse">Sousse</option>
+                    <option value="Sfax">Sfax</option>
+                    <option value="Nabeul">Nabeul</option>
+                    <option value="Ben Arous">Ben Arous</option>
+                    <option value="Ariana">Ariana</option>
+                </select> 
+                <textarea type="text" id="text" name="text" rows="8" required></textarea>
+                <div class="envoyer-icon">
+                    <a href=""><i class="far fa-paper-plane"></i></a>
+                </div>
+            </div> 
+        </div>
+    </div>
+   <!---------------- Footer   -------------------->
    <footer>
        <div class="footer-section">
            <div>
@@ -91,13 +150,5 @@
        </div>
        <div class ="copyright"> <i class="fas fa-copyright"></i> Copyright Amino <i class="fas fa-heart"></i> 2021</div>  
    </footer>
-   
-
-   
- 
-
-
-  
-    
-</body>
+ </body>
 </html>
